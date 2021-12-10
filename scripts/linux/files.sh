@@ -29,3 +29,11 @@ stat /path/to/file
 
 # copy from cli to clipboard
 cat my-file.txt | pbcopy
+
+# create multiline file 
+# special "\" character to avoid command execution
+cat <<EOF > $FILE_NAME
+#!/bin/bash
+echo \$PWD
+echo $PWD
+EOF
