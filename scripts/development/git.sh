@@ -14,3 +14,6 @@ git clean --dry-run
 
 # create custom commands en git
 git config --global alias.$COMMAND_NAME "$GIT_LONG_COMMAND"
+
+# show current branch
+git branch | grep '*' | awk '{ print $2 }'
