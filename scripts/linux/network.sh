@@ -7,3 +7,6 @@ cat /proc/loadavg
 
 # ver puertos usados en MAC os
 sudo lsof -i tcp:8080
+
+# ports connections mac os
+netstat -a -Ptcp | egrep 'tcp4.*LISTEN
