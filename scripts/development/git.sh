@@ -17,3 +17,6 @@ git config --global alias.$COMMAND_NAME "$GIT_LONG_COMMAND"
 
 # show current branch
 git branch | grep '*' | awk '{ print $2 }'
+
+# show files changes
+git log -p $COMMIT_ID
