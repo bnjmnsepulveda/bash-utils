@@ -12,6 +12,9 @@ grep -r bin /
 # busqueda contrariare
 grep -v name /
 
+# busca en el archivo el patron especificado
+grep "pattern" -n $FILE_PATH
+
 # busca algun path
 locate /path/to/search
 
